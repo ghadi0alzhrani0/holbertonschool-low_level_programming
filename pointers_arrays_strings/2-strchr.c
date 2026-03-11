@@ -5,9 +5,8 @@
  * @s: string to search in
  * @c: character to find
  *
- * Return: pointer to the first occurrence of c, or NULL
+ * Return: pointer to the first occurrence of c, or 0
  */
-
 char *_strchr(char *s, char c)
 {
 	int i = 0;
@@ -26,5 +25,5 @@ char *_strchr(char *s, char c)
 		return (&s[i]);
 	}
 
-	return (NULL);
+	return (0);
 }
