@@ -3,6 +3,12 @@
 
 #include <stdlib.h>
 
+/**
+ * struct hash_node_s - node
+ * @key: key
+ * @value: value
+ * @next: next
+ */
 typedef struct hash_node_s
 {
 	char *key;
@@ -10,6 +16,11 @@ typedef struct hash_node_s
 	struct hash_node_s *next;
 } hash_node_t;
 
+/**
+ * struct hash_table_s - table
+ * @size: size
+ * @array: array
+ */
 typedef struct hash_table_s
 {
 	unsigned long int size;
